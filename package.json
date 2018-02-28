@@ -1,0 +1,15 @@
+{
+  "name": "aggiestemapi",
+  "version": "1.0.0",
+  "description": "API for the AggieStem App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AggieStem",
+    "API"
+  ],
+  "author": "Alexander Coronado",
+  "license": "ISC"
+}
