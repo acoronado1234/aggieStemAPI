@@ -8,7 +8,8 @@ module.exports = function(app) {
         .post(aggieStem.create_a_task);
 
     app.route('/tasks/:taskId')
-        .get(todoList.read_a_task)
-        .put(todoList.update_a_task)
-        .delete(todoList.delete_a_task);
+        .get(aggieStem.read_a_task)
+        .put(aggieStem.update_a_task)
+        .delete(aggieStem.delete_a_task);
+
 };
