@@ -30,7 +30,7 @@ exports.medicallookup = function(req,res){
 };
 
 exports.signout = function(req,res){
-    res.json(SUCC:'Logged out');
+    res.json({SUCC:'Logged out'});
 };
 
 exports.adduser = function(req,res){
