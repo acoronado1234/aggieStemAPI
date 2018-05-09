@@ -21,11 +21,18 @@ exports.getschedule = function(req,res){
 };
 
 exports.medicallookup = function(req,res){
+    var staff = Student.find({'username': req.params.username})
+    level = staff.userrole;
     var query = Student.find().where('firstname').equals(req.params.firstname).where('lastname').equals(req.params.lastname);
     query.exec(function(err, student){
         if(err)
             res.send(err);
-        res.json({student.medicine, student.otcrestrictions});
+        if(level == 0)
+            res.json({student.medicine, student.otcrestrictions});
+        else if(level == 1)
+            res.json(student.otcrestrictions);
+        else
+            res.json(0);
     });
 };
 
