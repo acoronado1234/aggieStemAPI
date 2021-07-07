@@ -35,7 +35,7 @@ var StudentSchema = new Schema({
     scheduletype:{type: String},
     camp:{type: int},
     email:{type: String},
-    medicine:[{name:{type: String}, AM:{type: bool}, PM:{type:bool}}],
+    medicine:[{name:{type: String}, AM:{type: bool}, PM:{type:bool}, amount:{type: String}}],
     otcrestrictions:{type:[String]},
     comments:{type:String}
 });
